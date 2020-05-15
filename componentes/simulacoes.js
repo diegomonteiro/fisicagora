@@ -138,14 +138,3 @@ simulacoes["fisica"]["eletricidade_magnetismo"].simulacoes.push({
   "link": "https://pt.wikipedia.org/wiki/Lei_de_Faraday-Neumann-Lenz",
   "iframe_link": "https://phet.colorado.edu/sims/html/faradays-law/latest/faradays-law_pt.html"
 });
-
-simulacoes["fisica"]["eletricidade_magnetismo"].simulacoes.push({
-  "id": "lei_de_ohm",
-  "titulo": "Lei de Ohm",
-  "icone": "home",
-  "subtitulo": "Lei da fisica que descreve a razão entre a tensão entre dois pontos e a corrente elétrica é constante",
-  "descricao_curta": "Lei que afirma que, para um condutor mantido à temperatura constante, a razão entre a tensão entre dois pontos e a corrente elétrica é constante. Essa constante é denominada de resistência elétrica.",
-  "descricao_completa": "",
-  "link": "https://pt.wikipedia.org/wiki/Lei_de_Ohm",
-  "iframe_link": "https://phet.colorado.edu/sims/html/ohms-law/latest/ohms-law_pt.html"
-});
