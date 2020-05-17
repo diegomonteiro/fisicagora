@@ -65,7 +65,7 @@ simulacoes["fisica"]["luz_radiacao"].simulacoes.push({
 simulacoes["fisica"]["som_ondas"].simulacoes.push({
   "id": "ondas",
   "titulo": "Ondas",
-  "icone": "home",
+  "icone": "waves",
   "subtitulo": "Frequência, Amplitude, Velocidade de Onda, Comprimento de Onda, Água, Som, Luz",
   "descricao_curta": "Faça ondas com uma torneira pingando, alto-falante ou laser! Ajuste a frequência e a amplitude e observe os efeitos. Ouça o som produzido pelo alto-falante, e descubra o que determina a cor da luz.",
   "descricao_completa": "Em física, uma onda é uma perturbação oscilante de alguma grandeza física no espaço e periódica no tempo. A oscilação espacial se caracteriza por seu comprimento de onda, enquanto que o tempo decorrido em uma oscilação completa é denominado período da onda, e é o inverso da sua frequência. O comprimento de onda e a frequência estão relacionadas pela velocidade com que a onda se propaga. Fisicamente, uma onda é um pulso energético que se propaga através do espaço ou através de um meio (líquido, sólido ou gasoso), com velocidade definida. Segundo alguns estudiosos e até agora observado, nada impede que uma onda magnética se propague no vácuo ou através da matéria, como é o caso das ondas eletromagnéticas no vácuo ou dos neutrinos através da matéria, onde as partículas do meio oscilam à volta de um ponto médio mas não se deslocam. Exceto pela radiação eletromagnética, e provavelmente as ondas gravitacionais, que podem se propagar através do vácuo, as ondas existem em um meio cuja deformação é capaz de produzir forças de restauração através das quais elas viajam e podem transferir energia de um lugar para outro sem que qualquer das partículas do meio seja deslocada; isto é, a onda não transporta matéria. Há, entretanto, oscilações sempre associadas ao meio de propagação",
@@ -119,7 +119,7 @@ simulacoes["fisica"]["trabalho_energia"].simulacoes.push({
 
 simulacoes["fisica"]["eletricidade_magnetismo"].simulacoes.push({
   "id": "lei_de_coulomb",
-  "titulo": "Lei de Coulombx",
+  "titulo": "Lei de Coulomb",
   "icone": "bug_report",
   "subtitulo": "lei da física que descreve a interação eletrostática entre partículas eletricamente carregadas.",
   "descricao_curta": "A Lei de Coulomb é uma lei da física que descreve a interação eletrostática entre partículas eletricamente carregadas. Foi formulada e publicada pela primeira vez em 1783 pelo físico francês Charles Augustin de Coulomb e foi essencial para o desenvolvimento do estudo da Eletricidade.[1]",

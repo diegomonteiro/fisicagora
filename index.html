@@ -88,30 +88,7 @@
     <section>
         <!-- Left Sidebar -->
         <aside id="leftsidebar" class="sidebar">
-            <!-- User Info -->
-            <!--<div class="user-info">
-                <div class="image">
-                    <img src="node_modules/adminbsb-materialdesign/images/user.png" width="48" height="48" alt="User" />
-                </div>
-                <div class="info-container">
-                    <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">John Doe</div>
-                    <div class="email">john.doe@example.com</div>
-                    <div class="btn-group user-helper-dropdown">
-                        <i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">keyboard_arrow_down</i>
-                        <ul class="dropdown-menu pull-right">
-                            <li><a href="javascript:void(0);"><i class="material-icons">person</i>Profile</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="javascript:void(0);"><i class="material-icons">group</i>Followers</a></li>
-                            <li><a href="javascript:void(0);"><i class="material-icons">shopping_cart</i>Sales</a></li>
-                            <li><a href="javascript:void(0);"><i class="material-icons">favorite</i>Likes</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="javascript:void(0);"><i class="material-icons">input</i>Sign Out</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>-->
-            <!-- #User Info -->
-            <!-- Menu -->
+
             <div class="menu">
                 <ul id="lista-categorias" class="list">
                     <li class="header">CATEGORIAS</li>
@@ -276,7 +253,58 @@
 
     <section class="content">
         <div class="container-fluid">
-          <div id="iframe-simulacao"></div>
+
+          <div id="row_cards_simulacoes">
+          </div>
+
+          <div id="row_simulacoes" class="row">
+            <div class="col-md-12">
+              <div class="card">
+                        <div class="header">
+                            <h2 class="titulo-simulacao">
+                                TABS WITH ICON TITLE
+                            </h2>
+                        </div>
+                        <div class="body">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li role="presentation" class="">
+                                    <a href="#tab_simulacao" data-toggle="tab" aria-expanded="false">
+                                        <i class="material-icons">home</i> Simulação
+                                    </a>
+                                </li>
+                                <li role="presentation" class="active">
+                                    <a href="#tab_explicacao" data-toggle="tab" aria-expanded="true">
+                                        <i class="material-icons">face</i> Explicação
+                                    </a>
+                                </li>
+                                <li role="presentation" class="">
+                                    <a href="#tab_referencias" data-toggle="tab" aria-expanded="false">
+                                        <i class="material-icons">email</i> Referências
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane fade" id="tab_simulacao">
+                                    <div id="iframe-simulacao"></div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade active in" id="tab_explicacao">
+
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade" id="tab_referencias">
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+            </div>
+          </div>
+
+
         </div>
     </section>
 
@@ -327,6 +355,10 @@
 
       //Preencher menu lateral com as simulações carregadas
       preencher_menu_lateral(simulacoes);
+      preencher_cards(simulacoes);
+
+      $("#row_simulacoes").css("display","none");
+      $("#row_cards_simulacoes").css("display","block");
 
       $(document).on('click', '.link_simulacao', function(e){
         e.preventDefault();
@@ -334,20 +366,100 @@
         //console.log("Renderizar simulação: ",obj.data('simulacao-id'));
         $("#iframe-simulacao").empty();
 
-        var iframe = "<iframe src=\""+obj.data("link-iframe-simulacao")+"\" width=\"100%\" height=\"500\" scrolling=\"no\" allowfullscreen></iframe>";
-        console.log("Preencher com iframe: ", iframe);
+        $("#row_simulacoes").css("display","block");
+        $("#row_cards_simulacoes").css("display","none");
+
+        var iframe = "<iframe src=\""+obj.data("link-iframe-simulacao")+"\" width=\"100%\" height=\"450\" scrolling=\"no\" allowfullscreen></iframe>";
+        //console.log("Preencher com iframe: ", iframe);
         $("#iframe-simulacao").html(iframe);
+
+        var simulacao = null;
+
+        $.each(simulacoes["fisica"], function(k,v){
+          $.each(v.simulacoes, function(w,x){
+            if(x.id == obj.data('simulacao-id')){
+              simulacao = x;
+            }
+          });
+        });
+
+        console.log(simulacao);
+        $(".titulo-simulacao").html(simulacao.titulo);
+
+        $("#tab_explicacao").html(simulacao.descricao_completa);
+        $("#tab_referencias").html(simulacao.link);
+
       });
 
       $(document).on('ready', function(){
 
       });
 
+
+      function preencher_cards(simulacoes){
+        var div = $("#row_cards_simulacoes");
+
+        var categorias = Object.keys(simulacoes["fisica"]);
+        var cores = ["red","green","cyan","orange","blue-gray","pink","lightblue","lightgreen","amber"];
+        var simuls = [];
+        $.each(simulacoes["fisica"], function(k,v){
+          $.each(v.simulacoes, function(x,w){
+            simuls.push(w);
+          });
+        });
+
+        vals = split(simuls,3);
+
+        var ret = "";
+
+        $.each(vals, function(key,val){
+          ret += "<div class='row'>";
+
+            $.each(val, function(kx,vx){
+              ret += "<div class='col-lg-4 col-md-4 col-sm-6 col-xs-12'>";
+              ret += "<div class=\"card\">";
+                ret += "<div class=\"header bg-"+cores[key]+"\">";
+                    ret += "<h2>"+vx.titulo+"</h2>";
+                ret += "</div>";
+                ret += "<div class=\"body\">";
+                  ret += vx.descricao_curta;
+                  ret += "<hr></hr>";
+                  ret += "<a href='#' data-simulacao-id="+vx.id+" data-link-iframe-simulacao="+vx.iframe_link+" class='link_simulacao btn btn-success btn-block'>Simular!</a>"
+                ret += "</div>";
+                ret += "</div>";
+              ret += "</div>";
+            });
+
+          ret += "</div>";
+        });
+
+        $("#row_cards_simulacoes").html(ret);
+      }
+
+      /** Função que converte um array em um array separado por colunas **/
+      function split(array, cols) {
+      	var ret = [];
+      	if (cols==1 || array.length === 1){
+      		ret.push(array);
+      	}else{
+      		var size = Math.ceil(array.length / cols);
+      		for (var i = 0; i < cols; i++) {
+      			var start = i*size;
+      			ret.push(array.slice(start, start+size));
+      		}
+      	}
+      	return ret;
+      }
+
       function preencher_menu_lateral(simulacoes){
         var lista = $("#lista-categorias").empty();
+        var li = "";
+
+        li += "<li class='active'><a href='index.html'><i class='material-icons'>home</i> <span>Home</span></a></li>";
+        lista.append(li);
 
         $.each(simulacoes["fisica"], function(key,val){
-          var li = "<li>";
+           li = "<li>";
             if(val.simulacoes.length > 0){
               li+= "<a href='javascript:void(0);' class=\"menu-toggle\">";
             }else {
