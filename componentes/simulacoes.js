@@ -138,7 +138,6 @@ simulacoes["fisica"]["eletricidade_magnetismo"].simulacoes.push({
   "link": "https://pt.wikipedia.org/wiki/Lei_de_Faraday-Neumann-Lenz",
   "iframe_link": "https://phet.colorado.edu/sims/html/faradays-law/latest/faradays-law_pt.html"
 });
-<<<<<<< HEAD
 
 simulacoes["fisica"]["eletricidade_magnetismo"].simulacoes.push({
   "id": "lei_de_ohm",
@@ -160,5 +159,3 @@ simulacoes["fisica"]["luz_radiacao"].simulacoes.push({
   "link": "https://pt.wikipedia.org/wiki/Lei_de_Snell",
   "iframe_link": "https://phet.colorado.edu/sims/html/bending-light/latest/bending-light_pt_BR.html"
 });
-=======
->>>>>>> caff1e577503306d6d3aa95e58cc7b25a035e604
