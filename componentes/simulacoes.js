@@ -170,3 +170,25 @@ simulacoes["fisica"]["luz_radiacao"].simulacoes.push({
   "link": "https://pt.wikipedia.org/wiki/Lei_de_Snell",
   "iframe_link": "https://phet.colorado.edu/sims/html/molecules-and-light/latest/molecules-and-light_pt.html"
 });
+
+simulacoes["fisica"]["calor_termodinamica"].simulacoes.push({
+  "id": "atrito",
+  "titulo": "Atrito",
+  "icone": "home",
+  "subtitulo": "Atrito, Termodinâmica, Calor",
+  "descricao_curta": "Atrito, em física, é a força de contato que atua sempre que dois corpos entram em choque e há tendência ao movimento. É gerada pela aspericidade (rugosidade) dos corpos.",
+  "descricao_completa": "Atrito, em física, é a força de contato que atua sempre que dois corpos entram em choque e há tendência ao movimento. É gerada pela aspericidade (rugosidade) dos corpos . A força de atrito é sempre paralela às superfícies em interação e geralmente contrária ao movimento relativo entre elas. Apesar de sempre paralelo às superfícies em interação, o atrito entre estas superfícies depende da força normal, a componente vertical da força de contato; quanto maior for a força normal maior será o atrito.",
+  "link": "https://pt.wikipedia.org/wiki/Atrito",
+  "iframe_link": "https://phet.colorado.edu/sims/html/friction/latest/friction_pt_BR.html"
+});
+
+simulacoes["fisica"]["eletricidade_magnetismo"].simulacoes.push({
+  "id": "baloes_e_eletricidade_estática",
+  "titulo": "Balões e Eletricidade Estática",
+  "icone": "home",
+  "subtitulo": "Eletricidade Estática, Cargas Elétricas, Força Elétrica",
+  "descricao_curta": "Utilize um balão para explorar conceitos de eletricidade estática, como transferência de carga, atração, repulsão e carga induzida.",
+  "descricao_completa": "Esta simulação demonstra como ocorre a eletrização de um balão ao ser atritado a uma blusa de lã. Demonstra ainda a atração entre objetos eletrizados com cargas contrárias e a repulsão entre objetos de mesma carga",
+  "link": "https://pt.wikipedia.org/wiki/Atrito",
+  "iframe_link": "http://acervodigital.unesp.br/handle/unesp/378001"
+});
