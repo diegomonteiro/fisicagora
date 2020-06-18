@@ -183,7 +183,7 @@ simulacoes["fisica"]["calor_termodinamica"].simulacoes.push({
 });
 
 simulacoes["fisica"]["eletricidade_magnetismo"].simulacoes.push({
-  "id": "baloes_e_eletricidade_estática",
+  "id": "baloes_e_eletricidade_estatica",
   "titulo": "Balões e Eletricidade Estática",
   "icone": "home",
   "subtitulo": "Eletricidade Estática, Cargas Elétricas, Força Elétrica",
