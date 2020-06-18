@@ -189,6 +189,6 @@ simulacoes["fisica"]["eletricidade_magnetismo"].simulacoes.push({
   "subtitulo": "Eletricidade Estática, Cargas Elétricas, Força Elétrica",
   "descricao_curta": "Utilize um balão para explorar conceitos de eletricidade estática, como transferência de carga, atração, repulsão e carga induzida.",
   "descricao_completa": "Esta simulação demonstra como ocorre a eletrização de um balão ao ser atritado a uma blusa de lã. Demonstra ainda a atração entre objetos eletrizados com cargas contrárias e a repulsão entre objetos de mesma carga",
-  "link": "https://pt.wikipedia.org/wiki/Atrito",
-  "iframe_link": "http://acervodigital.unesp.br/handle/unesp/378001"
+  "link": "http://acervodigital.unesp.br/handle/unesp/378001",
+  "iframe_link": "https://phet.colorado.edu/sims/html/balloons-and-static-electricity/latest/balloons-and-static-electricity_pt_BR.html"
 });
