@@ -192,4 +192,3 @@ simulacoes["fisica"]["eletricidade_magnetismo"].simulacoes.push({
   "link": "http://acervodigital.unesp.br/handle/unesp/378001",
   "iframe_link": "https://phet.colorado.edu/sims/html/balloons-and-static-electricity/latest/balloons-and-static-electricity_pt_BR.html"
 });
-kkkkk
