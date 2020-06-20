@@ -203,3 +203,14 @@ simulacoes["fisica"]["som_ondas"].simulacoes.push({
   "link": "https://pt.wikipedia.org/wiki/OndasEstacionaria",
   "iframe_link": "https://phet.colorado.edu/sims/html/wave-on-a-string/latest/wave-on-a-string_pt.html"
 });
+
+simulacoes["fisica"]["trabalho_energia"].simulacoes.push({
+  "id": "massas_e_molas",
+  "titulo": "Massas e Molas",
+  "icone": "home",
+  "subtitulo": "Movimento Periódico, Lei de Hooke, Energia de Conservação, Leis de Newton, Medida, Vetores",
+  "descricao_curta": "Pendure massas nas molas e ajuste a constante e o amortecimento da mola. Transporte o laboratório para diferentes planetas ou diminua o tempo. Observe as forças e a energia no sistema em tempo real e use o cronômetro para medir o período.",
+  "descricao_completa": "O sistema massa-mola é constituído por um corpo de massa m acoplado a uma mola com fator restaurador k (constante de deformação), enquanto a outra extremidade está ligada a um ponto fixo conforme mostrado na Figura 1. Se tal sistema encontra-se em equilíbrio, a posição da massa é denotada por O (x = 0) e toda vez que a massa é deslocada em relação a ponto, surge uma força restauradora F = - kx, que tenta trazê-la de volta à situação inicial. As posições -xM e xM representam, respectivamente, a mola comprimida e a mola estendida. Quando o bloco de massa m é deslocado em relação à posição inicial e solto em seguida, o sistema passa a oscilar em torno da posição de equilíbrio.",
+  "link": "https://pt.wikipedia.org/wiki/Sistema_massa-mola",
+  "iframe_link": "https://phet.colorado.edu/sims/html/masses-and-springs/latest/masses-and-springs_pt_BR.html"
+});
