@@ -164,10 +164,10 @@ simulacoes["fisica"]["luz_radiacao"].simulacoes.push({
   "id": "moleculas_e_luz",
   "titulo": "Moléculas e luz",
   "icone": "home",
-  "subtitulo": "Em ótica, a lei de Snell, ou simplesmente lei de refração, resume-se a uma expressão que dá o desvio angular sofrido por um raio de luz ao passar para um meio com índice de refração diferente do qual ele estava percorrendo.",
-  "descricao_curta": "Em ótica, a lei de Snell, ou simplesmente lei de refração, resume-se a uma expressão que dá o desvio angular sofrido por um raio de luz ao passar para um meio com índice de refração diferente do qual ele estava percorrendo. Em outras palavras, descreve a relação entre os ângulos de incidência e refração, quando referindo-se a luz ou outras ondas passando através de uma fronteira (interface) entre dois meios isotrópicos diferentes, tais como água e vidro. A lei de Snell-Descartes refere-se aos cientistas Willebrord Snellius e René Descartes.",
+  "subtitulo": "Moléculas, Fótons, Absorção, Luz.",
+  "descricao_curta": "Explorar como a luz interage com as moléculas na atmosfera, Identificar que a absorção da luz depende da molécula e do tipo de luz, Relacionar a energia da luz ao movimento resultante, Identificar que energia aumenta do micro-ondas ao ultravioleta, Prever o movimento de uma molécula com base no tipo de luz que ela absorve, Identificar como a estrutura de uma molécula afeta a forma como ela interage com a luz.",
   "descricao_completa": "",
-  "link": "https://pt.wikipedia.org/wiki/Lei_de_Snell",
+  "link": "https://pt.wikipedia.org/wiki/Radia%C3%A7%C3%A3o_eletromagn%C3%A9tica",
   "iframe_link": "https://phet.colorado.edu/sims/html/molecules-and-light/latest/molecules-and-light_pt.html"
 });
 
