@@ -192,3 +192,14 @@ simulacoes["fisica"]["eletricidade_magnetismo"].simulacoes.push({
   "link": "http://acervodigital.unesp.br/handle/unesp/378001",
   "iframe_link": "https://phet.colorado.edu/sims/html/balloons-and-static-electricity/latest/balloons-and-static-electricity_pt_BR.html"
 });
+
+simulacoes["fisica"]["som_ondas"].simulacoes.push({
+  "id": "ondas_em_corda",
+  "titulo": "Ondas em Corda",
+  "icone": "waves",
+  "subtitulo": "Ondas, Frequência, Amplitude, Damping",
+  "descricao_curta": "Explore o maravilhoso mundo das ondas! Observe também uma corda vibrar em câmera lenta. Mexa a ponta de uma corda e faça ondas, ou ajuste a frequência e a amplitude de um oscilador.",
+  "descricao_completa": "Quando uma corda é deformada, a perturbação propaga-se por toda a corda, refletindo-se nas suas extremidades fixas. A interferência de duas ondas senoidais iguais que se propagam em sentidos opostos produz uma onda estacionária, ou seja, uma oscilação que aparenta não se mover através do material. Os nodos resultam da interferência (destrutiva) entre a crista e o vale de duas ondas. Nos anti-nodos, onde o deslocamento é máximo, a interferência dá-se entre duas cristas ou dois vales de onda. Cada padrão de oscilação corresponde a uma determinada frequência a que se chama um harmônico. As frequências de vibração variam com o comprimento da corda e com as suas características (material, tensão, espessura), que determinam a velocidade de propagação das ondas. À frequência mais baixa a que a corda vibra chama-se frequência fundamental.",
+  "link": "https://pt.wikipedia.org/wiki/OndasEstacionaria",
+  "iframe_link": "https://phet.colorado.edu/sims/html/wave-on-a-string/latest/wave-on-a-string_pt.html"
+});
