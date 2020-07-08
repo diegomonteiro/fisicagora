@@ -61,6 +61,7 @@ simulacoes["fisica"]["luz_radiacao"].simulacoes.push({
   "link": "https://pt.wikipedia.org/wiki/Corpo_negro",
   "iframe_link": "https://phet.colorado.edu/sims/html/blackbody-spectrum/latest/blackbody-spectrum_pt_BR.html"
 });
+<iframe src="https://phet.colorado.edu/sims/html/blackbody-spectrum/latest/blackbody-spectrum_pt_BR.html" height="450px" width="100%" title="Espectro de Corpo Negro"></iframe>
 
 simulacoes["fisica"]["som_ondas"].simulacoes.push({
   "id": "ondas",
