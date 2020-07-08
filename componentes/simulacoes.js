@@ -60,9 +60,9 @@ simulacoes["fisica"]["luz_radiacao"].simulacoes.push({
   "descricao_completa": "Na Física, um corpo negro é um objeto hipotético que absorve toda a radiação eletromagnética que nele incide: nenhuma luz o atravessa e nem é refletida. Um corpo com essa propriedade, em princípio, não poderia ser visto, daí o nome corpo negro. Apesar do nome, corpos negros emitem radiação, o que permite determinar sua temperatura. Em equilíbrio termodinâmico, um corpo negro ideal irradia energia na mesma taxa que a absorve, sendo essa uma das propriedades que o tornam uma fonte ideal de radiação térmica. Na natureza não existem corpos negros perfeitos, já que nenhum objeto consegue ter absorção e emissão perfeitas.",
   "link": "https://pt.wikipedia.org/wiki/Corpo_negro",
   "iframe_link": "https://phet.colorado.edu/sims/html/blackbody-spectrum/latest/blackbody-spectrum_pt_BR.html"
-});
-<iframe src="https://phet.colorado.edu/sims/html/blackbody-spectrum/latest/blackbody-spectrum_pt_BR.html" height="450px" width="100%" title="Espectro de Corpo Negro"></iframe>
 
+<iframe src="https://phet.colorado.edu/sims/html/blackbody-spectrum/latest/blackbody-spectrum_pt_BR.html" height="450px" width="100%" title="Espectro de Corpo Negro"></iframe>
+});
 simulacoes["fisica"]["som_ondas"].simulacoes.push({
   "id": "ondas",
   "titulo": "Ondas",
